@@ -11,11 +11,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/employees",
+					"raw": "localhost:{portNumber}/employees",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "{portNumber}",
 					"path": [
 						"employees"
 					]
@@ -76,7 +76,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"firstName\": \"Samwise\", \"lastName\": \"Gamgee\", \"role\": \"gardener\"}",
+					"raw": "{\"firstName\": \"andy\", \"lastName\": \"li\", \"role\": \"motivator\"}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -84,11 +84,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/employees",
+					"raw": "localhost:{{portNumber}}/employees",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "{{portNumber}}",
 					"path": [
 						"employees"
 					]
@@ -103,7 +103,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"name\": \"Samwise Gamgee\", \"role\": \"ring bearer\"}",
+					"raw": "{\"name\": \"andy li\", \"role\": \"inventor\"}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -111,14 +111,14 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/employees/3",
+					"raw": "localhost:{{portNumber}}/employees/6",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "{{portNumber}}",
 					"path": [
 						"employees",
-						"3"
+						"6"
 					]
 				}
 			},
@@ -130,14 +130,14 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/employees/3",
+					"raw": "localhost:{{portNumber}}/employees/6",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "{{portNumber}}",
 					"path": [
 						"employees",
-						"3"
+						"6"
 					]
 				}
 			},
@@ -149,11 +149,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/orders",
+					"raw": "localhost:{{portNumber}}/orders",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "{{portNumber}}",
 					"path": [
 						"orders"
 					]
@@ -167,11 +167,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/orders/4",
+					"raw": "localhost:{{portNumber}}/orders/4",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "{{portNumber}}",
 					"path": [
 						"orders",
 						"4"
@@ -186,11 +186,11 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/orders/4/cancel",
+					"raw": "localhost:{{portNumber}}/orders/4/cancel",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "{{portNumber}}",
 					"path": [
 						"orders",
 						"4",
@@ -206,11 +206,11 @@
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/orders/4/complete",
+					"raw": "localhost:{{portNumber}}/orders/4/complete",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "{{portNumber}}",
 					"path": [
 						"orders",
 						"4",
